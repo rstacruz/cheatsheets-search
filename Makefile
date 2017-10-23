@@ -20,4 +20,4 @@ public/index.json:
 public/CNAME:
 	echo "${CNAME}" > $@
 
-.PHONY: public/index.json
+.PHONY: public/index.json public/CNAME
