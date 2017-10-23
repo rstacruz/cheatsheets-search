@@ -1,14 +1,12 @@
 # Developer notes
 
-## Basic usage
-
-Update and deploy:
+**Update and deploy:** This will update `/public` (a gitignored path) and deploy it onto the `gh-pages` branch.
 
 ```
 make deploy
 ```
 
-Or you can update only (no deploy):
+**Update-only:** You can also update only (no deploy) to inspect what goes on.
 
 ```
 make update
