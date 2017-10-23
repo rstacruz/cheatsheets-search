@@ -9,7 +9,9 @@ update: \
 	public/.nojekyll \
 	public/index.json
 
-deploy: update
+deploy: update deploy-run
+
+deploy-run:
 	$(npmbin)/git-update-ghpages \
 		--force --branch gh-pages \
 		${REPO} public
