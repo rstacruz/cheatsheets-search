@@ -4,7 +4,10 @@ npmbin := ./node_modules/.bin
 
 build: public/index.json
 
-update: public/CNAME public/index.json
+update: \
+	public/CNAME \
+	public/.nojekyll \
+	public/index.json
 
 deploy: update
 	$(npmbin)/git-update-ghpages \
@@ -19,5 +22,8 @@ public/index.json:
 
 public/CNAME:
 	echo "${CNAME}" > $@
+
+public/.nojekyll:
+	echo "" > $@
 
 .PHONY: public/index.json public/CNAME
