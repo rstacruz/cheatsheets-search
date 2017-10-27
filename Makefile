@@ -18,7 +18,7 @@ deploy-run:
 
 public/index.json:
 	mkdir -p public
-	env DEBUG="app:*" node lib/search/build_index.js \
+	env DEBUG="app:*" node lib/indexer/cli.js \
 		--input "${HOST}/data/search-index.json" \
 		> $@
 
