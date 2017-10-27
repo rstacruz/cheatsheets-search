@@ -2,11 +2,10 @@
 
 npmbin := ./node_modules/.bin
 
-build: public/index.json
-
 update: \
 	public/CNAME \
 	public/.nojekyll \
+	public/search.js \
 	public/index.json
 
 deploy: update deploy-run
@@ -22,10 +21,12 @@ public/index.json:
 		--input "${HOST}/data/search-index.json" \
 		> $@
 
+public/search.js: public/index.json
+	$(npmbin)/webpack \
+		--config lib/webpack/webpack.config.js
+
 public/CNAME:
 	echo "${CNAME}" > $@
 
 public/.nojekyll:
 	echo "" > $@
-
-.PHONY: public/index.json public/CNAME

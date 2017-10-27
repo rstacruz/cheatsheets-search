@@ -6,10 +6,11 @@ This repo is a companion to [rstacruz/cheatsheets](https://github.com/rstacruz/c
 
 ## Info
 
-This repo builds and serves the URL:
+This repo builds and serves the URLs:
 
 ```
 https://search.devhints.io/index.json
+https://search.devhints.io/search.js
 ```
 
 This URL contains Lunr indices. See [CONTRIBUTING.md](CONTRIBUTING.md) for developer notes.
