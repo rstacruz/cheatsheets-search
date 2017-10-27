@@ -23,7 +23,7 @@ public/v1/index.json:
 
 public/v1/search.js: public/v1/index.json
 	mkdir -p public/v1
-	$(npmbin)/webpack \
+	$(npmbin)/webpack -p \
 		--config lib/webpack/webpack.config.js
 
 public/CNAME:
