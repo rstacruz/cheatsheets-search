@@ -9,8 +9,8 @@ This repo is a companion to [rstacruz/cheatsheets](https://github.com/rstacruz/c
 This repo builds and serves the URLs:
 
 ```
-https://search.devhints.io/index.json
-https://search.devhints.io/search.js
+https://search.devhints.io/v1/index.json
+https://search.devhints.io/v1/search.js
 ```
 
 This URL contains Lunr indices. See [CONTRIBUTING.md](CONTRIBUTING.md) for developer notes.
